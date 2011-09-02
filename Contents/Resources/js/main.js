@@ -113,13 +113,13 @@ SCS.Conversation = function() {
 	 * @private
 	 */
 	this._init = function() {
-    setInterval(function() {
-      var lastItem = $('.message:last');
+		setInterval(function() {
+			var lastItem = $('.message:last');
 
-      if(lastItem) {
-        lastItem.css('marginBottom', (parseInt(lastItem.css('marginBottom')) + 1) + 'px');
-      }
-    }, 1000);
+			if(lastItem) {
+				lastItem.css('marginBottom', (parseInt(lastItem.css('marginBottom')) + 1) + 'px');
+			}
+		}, 1000);
 
 		if (_container.length > 0) {
 			var _layoutCheck = function() {
